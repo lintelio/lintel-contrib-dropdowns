@@ -1,0 +1,32 @@
+{
+  "name": "lintel-contrib-dropdowns",
+  "version": "0.1.0",
+  "description": "Dropdowns for lintel.",
+  "homepage": "https://github.com/lintelio/lintel-contrib-dropdowns",
+  "repository": "https://github.com/lintelio/lintel-contrib-dropdowns.git",
+  "keywords": [
+    "lintelmodule",
+    "lintel"
+  ],
+  "main": [
+    "sass/dropdowns.sass",
+    "dist/dropdowns.min.css",
+    "dist/dropdowns.min.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lintel": "~0.1.0"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "/.*",
+    "sass/lintel-core-loader.scss"
+  ],
+  "authors": [
+    {
+      "name": "Marius Craciunoiu",
+      "email": "",
+      "url": "mariusc23.com"
+    }
+  ]
+}
