@@ -8,44 +8,60 @@
 
 // Base
 // ----
-.bacon {
-  background-color: $bacon-base-bg;
-  border: 1px solid $bacon-base-border;
-  border-radius: $bacon-border-radius;
-  color: $bacon-base-text;
-  padding: $bacon-padding-y $bacon-padding-x;
-  margin-bottom: $bacon-margin-y;
+.dropdown {
+  @if $dropdown-bg-fallback != $dropdown-bg {
+    background-color: $dropdown-bg-fallback;
+  }
+  background: $dropdown-bg;
+  background-clip: padding-box;
+  border: 1px solid $dropdown-border;
+  border-radius: $dropdown-border-radius;
+  box-shadow: $dropdown-box-shadow;
+  display: none;
+  font-size: $dropdown-font-size;
+  float: left;
+  left: 0;
+  list-style: none;
+  min-width: $dropdown-min-width;
+  margin: $dropdown-margin-top $dropdown-margin-x $dropdown-margin-bottom;
+  padding: $dropdown-padding-y $dropdown-padding-x;
+  position: absolute;
+  text-align: $dropdown-text-align;
+  top: 100%;
+  z-index: $dropdown-z-index;
+
+  > li > a {
+    color: $dropdown-item-text;
+    @if $dropdown-item-border {
+      border-bottom: $dropdown-item-border;
+    }
+    clear: both;
+    display: block;
+    font-weight: $dropdown-font-weight;
+    margin: $dropdown-item-margin-y $dropdown-item-margin-x;
+    padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+    text-decoration: none;
+
+    &:hover {
+      background: $dropdown-item-hover-bg;
+      border-bottom-color: $dropdown-item-hover-border;
+      color: $dropdown-item-hover-text;
+    }
+  }
+
+  > li:last-child > a,
+  > .last > a {
+    border-bottom: 0;
+  }
+
+  .open > & {
+    display: block;
+  }
 }
 
-
-// States
-// ------
-// Primary
-.bacon-primary {
-  @include make-bacon($bg: $bacon-primary-bg, $border: $bacon-primary-border, $text: $bacon-primary-text);
-}
-
-// Secondary
-.bacon-secondary {
-  @include make-bacon($bg: $bacon-secondary-bg, $border: $bacon-secondary-border, $text: $bacon-secondary-text);
-}
-
-// Error
-.bacon-error {
-  @include make-bacon($bg: $bacon-error-bg, $border: $bacon-error-border, $text: $bacon-error-text);
-}
-
-// Warning
-.bacon-warning {
-  @include make-bacon($bg: $bacon-warning-bg, $border: $bacon-warning-border, $text: $bacon-warning-text);
-}
-
-// Success
-.bacon-success {
-  @include make-bacon($bg: $bacon-success-bg, $border: $bacon-success-border, $text: $bacon-success-text);
-}
-
-// Info
-.bacon-info {
-  @include make-bacon($bg: $bacon-info-bg, $border: $bacon-info-border, $text: $bacon-info-text);
+// Divider
+// -------
+.dropdown-divider {
+  border-top: 1px solid $dropdown-divider-border;
+  margin: $dropdown-divider-margin-top $dropdown-divider-margin-x $dropdown-divider-margin-bottom;
 }

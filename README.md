@@ -34,52 +34,54 @@ You can use [wiredep](https://github.com/taptapship/wiredep) or [grunt-wiredep](
 ## Variables
 Check the vars file in the `sass` folder to see the full list of variables you can customize.
 
-#### $bacon-bg
-Default value: `#4b77be`  
+#### $dropdown-*
+Variables relating to the dropdown list.
 
-Change the bacon background.
+#### $dropdown-item-*  
+Variables relating to individual items (`<a>`s).
 
-#### $bacon-border
-Default value: `#f00`  
-
-Change the bacon border color.
-
-#### $bacon-text
-Default value: `#fff`  
-
-Change the bacon text color.
-
-
-## Mixins
-Check the mixins file in the `sass` folder to see how you can extend this module.
-
-#### make-bacon($bg, $border, $text)
-Default $bg: `$bacon-bg`  
-Default $border: `$bacon-border`  
-Default $text: `$bacon-text`  
-
-Sets the background, border, and text color of an element.
-
-```scss
-.bacon-primary {
-  @include make-bacon(#fff, #f00, #000);
-}
-```
+#### $dropdown-divider-*
+Variables related to the dropdown divider.
 
 
 ## Examples
 
-#### Bacon
+#### Single Dropdown
 ```html
-<div class="bacon">
-  Hello world!
+<div class="btn-group">
+  <button class="btn btn-dropdown-toggle" type="button" aria-expanded="false">
+    Dropdown
+    <span class="btn-caret" aria-hidden="true"></span>
+  </button>
+  <ul class="dropdown" role="menu">
+    <li><a href="#">Action 1</a></li>
+    <li><a href="#">Action 2</a></li>
+    <li><a href="#">Action 3</a></li>
+  </ul>
 </div>
 ```
 
-#### Primary Bacon
+#### Split Dropdown
 ```html
-<div class="bacon bacon-primary">
-  Hello world!
+<div class="btn-group">
+  <button class="btn" type="button" aria-expanded="false">Split Dropdown</button>
+  <button class="btn btn-dropdown-toggle" type="button" aria-label="More Options"><span class="btn-caret" aria-hidden="true"></span></button>
+  <ul class="dropdown" role="menu">
+    <li><a href="#">Action 1</a></li>
+    <li><a href="#">Action 2</a></li>
+    <li><a href="#">Action 3</a></li>
+    <li class="dropdown-divider"></li>
+    <li><a href="#">Alt Action 1</a></li>
+  </ul>
+</div>
+```
+
+#### Open Dropdown
+The javascript component of this library will take care of the `.open` and `aria-expanded` property.
+```html
+<div class="btn-group open">
+  <button class="btn btn-dropdown-toggle" type="button" aria-expanded="true">...</button>
+  ...
 </div>
 ```
 

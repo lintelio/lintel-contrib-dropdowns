@@ -2,44 +2,42 @@
 // https://github.com/lintelio/lintel/blob/master/CONTRIBUTING.md
 
 // Global
-$bacon-padding-y:         $cushion-y-md !default;
-$bacon-padding-x:         $cushion-x-md !default;
+$dropdown-bg-fallback:            #fff;
+$dropdown-bg:                     rgba(255,255,255,.8);
+$dropdown-border:                 $border-darkest;
+$dropdown-border-radius:          $border-radius-sm;
+$dropdown-box-shadow:             $box-shadow-base;
+$dropdown-min-width:              180px;
+$dropdown-z-index:                $z-index-xl;
 
-$bacon-margin-y:          $cushion-y-lg !default;
+$dropdown-font-size:              $font-size-sm;
+$dropdown-font-weight:            normal;
+$dropdown-text-align:             left;
 
-$bacon-border-radius:     $border-radius-base !default;
+$dropdown-margin-top:             4px;
+$dropdown-margin-x:               0;
+$dropdown-margin-bottom:          0;
 
-// Base
-$bacon-base-bg:           $bg-light !default;
-$bacon-base-border:       $border-base !default;
-$bacon-base-text:         $text-base !default;
+$dropdown-padding-y:              4px;
+$dropdown-padding-x:              0;
 
-// Primary
-$bacon-primary-bg:        $state-primary-bg !default;
-$bacon-primary-border:    $state-primary-border !default;
-$bacon-primary-text:      $state-primary-text !default;
+// Items
+$dropdown-item-margin-y:          0;
+$dropdown-item-margin-x:          $dropdown-padding-y;
 
-// Secondary
-$bacon-secondary-bg:      $state-secondary-bg !default;
-$bacon-secondary-border:  $state-secondary-border !default;
-$bacon-secondary-text:    $state-secondary-text !default;
+$dropdown-item-padding-y:         $cushion-y-xs;
+$dropdown-item-padding-x:         ($btn-padding-x - $dropdown-padding-y);
 
-// Error
-$bacon-error-bg:          $state-error-bg !default;
-$bacon-error-border:      $state-error-border !default;
-$bacon-error-text:        $state-error-text !default;
+$dropdown-item-border:            null;
+$dropdown-item-text:              $text-base;
 
-// Warning
-$bacon-warning-bg:        $state-warning-bg !default;
-$bacon-warning-border:    $state-warning-border !default;
-$bacon-warning-text:      $state-warning-text !default;
+$dropdown-item-hover-bg:          $text-link;
+$dropdown-item-hover-border:      transparent;
+$dropdown-item-hover-text:        #fff;
 
-// Success
-$bacon-success-bg:        $state-success-bg !default;
-$bacon-success-border:    $state-success-border !default;
-$bacon-success-text:      $state-success-text !default;
+// Dividers
+$dropdown-divider-border:         $border-darker;
 
-// Info
-$bacon-info-bg:           $state-info-bg !default;
-$bacon-info-border:       $state-info-border !default;
-$bacon-info-text:         $state-info-text !default;
+$dropdown-divider-margin-top:     $dropdown-padding-y;
+$dropdown-divider-margin-x:       0;
+$dropdown-divider-margin-bottom:  $dropdown-divider-margin-top;

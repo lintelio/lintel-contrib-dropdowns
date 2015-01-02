@@ -1,5 +1,5 @@
 /*
- * dropdowns
+ * lintel-contrib-dropdowns
  * https://github.com/lintelio/lintel-contrib-dropdowns
  *
  * Copyright (c) 2015 Marius Craciunoiu
@@ -28,6 +28,7 @@ module.exports = function (grunt) {
         sourceMap: true,
         includePaths: [
           'bower_components/lintel/sass',
+          'bower_components',
           'sass'
         ]
       },
