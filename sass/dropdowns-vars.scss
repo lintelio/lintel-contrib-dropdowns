@@ -2,42 +2,42 @@
 // https://github.com/lintelio/lintel/blob/master/CONTRIBUTING.md
 
 // Global
-$dropdown-bg-fallback:            #fff;
-$dropdown-bg:                     rgba(255,255,255,.8);
-$dropdown-border:                 $border-darkest;
-$dropdown-border-radius:          $border-radius-sm;
-$dropdown-box-shadow:             $box-shadow-base;
-$dropdown-min-width:              180px;
-$dropdown-z-index:                $z-index-xl;
+$dropdown-bg-fallback:            #fff !default;
+$dropdown-bg:                     rgba(255,255,255,.8) !default;
+$dropdown-border:                 $border-darkest !default;
+$dropdown-border-radius:          $border-radius-sm !default;
+$dropdown-box-shadow:             $box-shadow-base !default;
+$dropdown-min-width:              180px !default;
+$dropdown-z-index:                $z-index-xl !default;
 
-$dropdown-font-size:              $font-size-sm;
-$dropdown-font-weight:            normal;
-$dropdown-text-align:             left;
+$dropdown-font-size:              $font-size-sm !default;
+$dropdown-font-weight:            normal !default;
+$dropdown-text-align:             left !default;
 
-$dropdown-margin-top:             4px;
-$dropdown-margin-x:               0;
-$dropdown-margin-bottom:          0;
+$dropdown-margin-top:             4px !default;
+$dropdown-margin-x:               0 !default;
+$dropdown-margin-bottom:          0 !default;
 
-$dropdown-padding-y:              4px;
-$dropdown-padding-x:              0;
+$dropdown-padding-y:              4px !default;
+$dropdown-padding-x:              0 !default;
 
 // Items
-$dropdown-item-margin-y:          0;
-$dropdown-item-margin-x:          $dropdown-padding-y;
+$dropdown-item-margin-y:          0 !default;
+$dropdown-item-margin-x:          $dropdown-padding-y !default;
 
-$dropdown-item-padding-y:         $cushion-y-xs;
-$dropdown-item-padding-x:         ($btn-padding-x - $dropdown-padding-y);
+$dropdown-item-padding-y:         $cushion-y-xs !default;
+$dropdown-item-padding-x:         ($btn-padding-x - $dropdown-padding-y) !default;
 
-$dropdown-item-border:            null;
-$dropdown-item-text:              $text-base;
+$dropdown-item-border:            null !default;
+$dropdown-item-text:              $text-base !default;
 
-$dropdown-item-hover-bg:          $text-link;
-$dropdown-item-hover-border:      transparent;
-$dropdown-item-hover-text:        #fff;
+$dropdown-item-hover-bg:          $text-link !default;
+$dropdown-item-hover-border:      transparent !default;
+$dropdown-item-hover-text:        #fff !default;
 
 // Dividers
-$dropdown-divider-border:         $border-darker;
+$dropdown-divider-border:         $border-darker !default;
 
-$dropdown-divider-margin-top:     $dropdown-padding-y;
-$dropdown-divider-margin-x:       0;
-$dropdown-divider-margin-bottom:  $dropdown-divider-margin-top;
+$dropdown-divider-margin-top:     $dropdown-padding-y !default;
+$dropdown-divider-margin-x:       0 !default;
+$dropdown-divider-margin-bottom:  $dropdown-divider-margin-top !default;
