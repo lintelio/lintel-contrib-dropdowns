@@ -1,6 +1,6 @@
 {
   "name": "lintel-contrib-dropdowns",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dropdowns for lintel.",
   "homepage": "https://github.com/lintelio/lintel-contrib-dropdowns",
   "repository": "https://github.com/lintelio/lintel-contrib-dropdowns.git",
@@ -20,10 +20,10 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "lintel-contrib-buttons": "~0.1.1"
+    "lintel-contrib-buttons": "~0.1.2"
   },
   "dependencies": {
-    "lintel": "~0.1.0"
+    "lintel": "~0.1.2"
   },
   "devDependencies": {
     "gm": "^1.17.0",
