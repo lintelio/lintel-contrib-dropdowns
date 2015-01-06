@@ -3,7 +3,7 @@ lintel-contrib-dropdowns
 
 > Dropdowns for lintel.
 
-[![npm](https://img.shields.io/npm/v/lintel-contrib-dropdowns.svg)](https://github.com/lintelio/lintel-contrib-dropdowns)
+[![npm](https://img.shields.io/npm/v/lintel-contrib-dropdowns.svg)](https://www.npmjs.com/package/lintel-contrib-dropdowns)
 [![Bower](https://img.shields.io/bower/v/lintel-contrib-dropdowns.svg)](https://github.com/lintelio/lintel-contrib-dropdowns)
 
 
