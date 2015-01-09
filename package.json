@@ -37,6 +37,7 @@
     "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.4.1",
     "grunt-sass": "^0.17.0",
     "grunt-webshot": "^0.3.0",
     "load-grunt-tasks": "^1.0.0"
