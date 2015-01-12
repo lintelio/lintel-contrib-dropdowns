@@ -10,8 +10,7 @@
   padding: 8px 12px;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out;
-          transition: box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -74,11 +73,11 @@
   .btn-primary.inverse {
     background-color: #f4f6fb;
     border-color: #a3b7d9;
-    color: #395f9d; }
+    color: #3c65a7; }
     .open > .btn-primary.inverse.btn-dropdown-toggle, .btn-primary.inverse:hover, .btn-primary.inverse:focus, .btn-primary.inverse:active, .btn-primary.inverse.active {
       background-color: #d0daec;
       border-color: #7493c6;
-      color: #395f9d; }
+      color: #3c65a7; }
     .btn-primary.inverse.disabled, .btn-primary.inverse.disabled:hover, .btn-primary.inverse.disabled:focus, .btn-primary.inverse.disabled:active, .btn-primary.inverse.disabled.active, .btn-primary.inverse[disabled], .btn-primary.inverse[disabled]:hover, .btn-primary.inverse[disabled]:focus, .btn-primary.inverse[disabled]:active, .btn-primary.inverse[disabled].active, fieldset[disabled] .btn-primary.inverse, fieldset[disabled] .btn-primary.inverse:hover, fieldset[disabled] .btn-primary.inverse:focus, fieldset[disabled] .btn-primary.inverse:active, fieldset[disabled] .btn-primary.inverse.active {
       background-color: #f4f6fb;
       border-color: #a3b7d9; }
@@ -97,11 +96,11 @@
   .btn-secondary.inverse {
     background-color: #eefaf8;
     border-color: #88c7bb;
-    color: #107360; }
+    color: #117e69; }
     .open > .btn-secondary.inverse.btn-dropdown-toggle, .btn-secondary.inverse:hover, .btn-secondary.inverse:focus, .btn-secondary.inverse:active, .btn-secondary.inverse.active {
       background-color: #c6efe7;
       border-color: #5bb2a1;
-      color: #107360; }
+      color: #117e69; }
     .btn-secondary.inverse.disabled, .btn-secondary.inverse.disabled:hover, .btn-secondary.inverse.disabled:focus, .btn-secondary.inverse.disabled:active, .btn-secondary.inverse.disabled.active, .btn-secondary.inverse[disabled], .btn-secondary.inverse[disabled]:hover, .btn-secondary.inverse[disabled]:focus, .btn-secondary.inverse[disabled]:active, .btn-secondary.inverse[disabled].active, fieldset[disabled] .btn-secondary.inverse, fieldset[disabled] .btn-secondary.inverse:hover, fieldset[disabled] .btn-secondary.inverse:focus, fieldset[disabled] .btn-secondary.inverse:active, fieldset[disabled] .btn-secondary.inverse.active {
       background-color: #eefaf8;
       border-color: #88c7bb; }
@@ -202,7 +201,7 @@
   background-color: transparent !important;
   border-color: transparent !important;
   box-shadow: none !important;
-  color: #395f9d !important;
+  color: #4b77be !important;
   text-decoration: underline;
   padding-left: 0;
   padding-right: 0; }
@@ -314,7 +313,7 @@
 
 .dropdown {
   background-color: #fff;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.97);
   background-clip: padding-box;
   border: 1px solid #cccccc;
   border-radius: 2px;
@@ -340,7 +339,7 @@
     padding: 5px 8px;
     text-decoration: none; }
     .dropdown > li > a:hover {
-      background: #395f9d;
+      background: #4b77be;
       border-bottom-color: transparent;
       color: #fff; }
   .dropdown > li:last-child > a, .dropdown > .last > a {
