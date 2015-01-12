@@ -23,7 +23,7 @@
     "lintel-contrib-buttons": "~0.1.2"
   },
   "dependencies": {
-    "jquery": ">= 1.9.1",
+    "jquery": ">= 1.9.2",
     "lintel": "~0.1.2"
   },
   "devDependencies": {
