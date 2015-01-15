@@ -11,22 +11,21 @@
   }
 
   var Dropdown = function(element) {
-    this.btn = $(element);
-    this.menu = this.btn.siblings('.dropdown');
-    this.container = this.btn.closest('.btn-group');
+    this.$btn = $(element);
+    this.$menu = this.$btn.siblings('.dropdown');
+    this.$container = this.$btn.closest('.btn-group');
   };
 
   Dropdown.prototype.isVisible = function() {
-    return this.container.hasClass('open');
+    return this.$container.hasClass('open');
   };
 
   Dropdown.prototype.show = function() {
     // Show event
     var showEvent = $.Event('show.lt.dropdown', {
-      relatedTarget: this.menu[0]
+      relatedTarget: this.$menu[0]
     });
-
-    this.btn.trigger(showEvent);
+    this.$btn.trigger(showEvent);
 
     // Allow event to be prevented
     if (showEvent.isDefaultPrevented()) { return; }
@@ -35,38 +34,35 @@
     hideAll();
 
     // Open dropdown
-    this.container.addClass('open');
-    this.btn.attr('aria-expanded', true);
+    this.$container.addClass('open');
+    this.$btn.attr('aria-expanded', true);
 
     // Shown event
     var shownEvent = $.Event('shown.lt.dropdown', {
-      relatedTarget: this.menu[0]
+      relatedTarget: this.$menu[0]
     });
-
-    this.btn.trigger(shownEvent);
+    this.$btn.trigger(shownEvent);
   };
 
   Dropdown.prototype.hide = function() {
     // Hide event
     var hideEvent = $.Event('hide.lt.dropdown', {
-      relatedTarget: this.menu[0]
+      relatedTarget: this.$menu[0]
     });
-
-    this.btn.trigger(hideEvent);
+    this.$btn.trigger(hideEvent);
 
     // Allow event to be prevented
     if (hideEvent.isDefaultPrevented()) { return; }
 
     // Close dropdown
-    this.container.removeClass('open');
-    this.btn.attr('aria-expanded', false);
+    this.$container.removeClass('open');
+    this.$btn.attr('aria-expanded', false);
 
     // Hidden event
     var hiddenEvent = $.Event('hidden.lt.dropdown', {
-      relatedTarget: this.menu[0]
+      relatedTarget: this.$menu[0]
     });
-
-    this.btn.trigger(hiddenEvent);
+    this.$btn.trigger(hiddenEvent);
   };
 
   Dropdown.prototype.toggle = function() {
