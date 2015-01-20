@@ -44,6 +44,80 @@ Variables relating to individual items (`<a>`s).
 Variables related to the dropdown divider.
 
 
+## JavaScript
+
+### Options
+
+Name      | Type                           | Default             | Description
+--------- | ------------------------------ | ------------------- | -----------
+onShow    | function                       |                     | Callback function to execute every time dropdown is shown.
+onHide    | function                       |                     | Callback function to execute every time dropdown is hidden.
+esc       | boolean                        | true                | Close modal on escape key.
+
+
+### Methods
+
+Name      | Description
+--------- | -----------
+toggle    | Toggle dropdown. 
+show      | Show dropdown. 
+hide      | Hide modal.
+
+
+### Events
+
+Event                | Description
+-------------------- | ------------------------------
+show.lt.dropdown     | Fires immediately before dropdown is shown. Can prevent dropdown from showing here.
+shown.lt.dropdown    | Fires immediately after dropdown is shown.
+hide.lt.dropdown     | Fires immediately before dropdown is hidden. Can prevent dropdown from hiding here.
+hidden.lt.dropdown   | Fires immediately after dropdown is hidden.
+
+
+### Data-attr
+Add `data-toggle="dropdown"` to the `.btn-dropdown-toggle`.
+You can add additional options as data-attributes.
+
+```html
+<div class="btn-group">
+  <button class="btn btn-dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+    Dropdown
+    <span class="btn-caret" aria-hidden="true"></span>
+  </button>
+  <ul class="dropdown" role="menu">
+    ...
+  </ul>
+</div>
+```
+
+
+### jQuery
+Call the jQuery plugin on the modal, passing in any options and the related target (button).
+
+```js
+var options = {
+  onShow: function(menu, button) {
+    console.log('onShow', this, menu, button);
+  },
+  onHide: function(menu, button) {
+    console.log('onHide', this, menu, button);
+  },
+  esc: false
+};
+
+$('#myButton').click(function(e) {
+  $(this).dropdown(options);  // this == #myButton
+});
+```
+
+Alternatively, you can use the default options:
+```js
+$('#myButton').click(function(e) {
+  $(this).dropdown('toggle'); // this == #myButton
+});
+```
+
+
 ## Examples
 
 #### Single Dropdown

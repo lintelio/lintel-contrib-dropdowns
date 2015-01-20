@@ -338,7 +338,7 @@
     margin: 0 4px;
     padding: 5px 8px;
     text-decoration: none; }
-    .dropdown > li > a:hover {
+    .dropdown > li > a:hover, .dropdown > li > a:focus {
       background: #4b77be;
       border-bottom-color: transparent;
       color: #fff; }

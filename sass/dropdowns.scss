@@ -42,7 +42,8 @@
     padding: $dropdown-item-padding-y $dropdown-item-padding-x;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $dropdown-item-hover-bg;
       border-bottom-color: $dropdown-item-hover-border;
       color: $dropdown-item-hover-text;
